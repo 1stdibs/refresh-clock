@@ -1,0 +1,34 @@
+{
+  "name": "refresh-clock",
+  "version": "1.0.0",
+  "description": "refresh clock display component",
+  "author": "",
+  "scripts": {
+    "test": "mocha",
+    "gitlint": "dibslint --git --warnings",
+    "lint": "dibslint --root=."
+  },
+  "main": "index.js",
+  "pre-commit": {
+    "run": [
+      "gitlint"
+    ]
+  },
+  "devDependencies": {
+    "dibslint": "^1.2.4",
+    "mimic-webpack": "^1.2.4",
+    "mocha": "^2.3.4",
+    "pre-commit": "^1.1.2",
+    "sinon": "^1.17.3",
+    "underscore": "^1.8.3",
+    "webpack-compile-templates": "^0.2.0"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "lodash.assign": "^4.0.2",
+    "moment": "^2.11.2"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
