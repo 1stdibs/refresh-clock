@@ -27,7 +27,7 @@
   "dependencies": {
     "lodash.assign": "^4.0.2",
     "moment": "^2.11.2",
-    "simple-view": "^1.2.3"
+    "simple-view": "^1.2.4"
   },
   "directories": {
     "test": "test"
