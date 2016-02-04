@@ -25,6 +25,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "dibs-scss-vars": "^1.0.3",
     "lodash.assign": "^4.0.2",
     "moment": "^2.11.2",
     "simple-view": "^1.2.4"

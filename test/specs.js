@@ -17,6 +17,9 @@ new Mimic({
             loaders: [{
                 test: /\.html$/,
                 loader: 'webpack-compile-templates'
+            },{
+                test: /\.scss$/,
+                loader: 'null'
             }]
         }
     }

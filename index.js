@@ -3,6 +3,7 @@ var assign = require('lodash.assign');
 var View = require('simple-view').View;
 var moment = require('moment');
 var templates = require('./template');
+require('./style.scss');
 module.exports = View.extend({
     events: {
         'click .refresh-icon, a': function () {
