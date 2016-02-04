@@ -30,5 +30,13 @@
   },
   "directories": {
     "test": "test"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antialias/refresh-clock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/antialias/refresh-clock/issues"
+  },
+  "homepage": "https://github.com/antialias/refresh-clock#readme"
 }
