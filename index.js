@@ -54,9 +54,11 @@ module.exports = View.extend({
     _setExpandInterval : function () {
         // Every 10 minutes, remind the user that a bunch of time has passed by swapping out the recessed/full classes.
         this._intervals.push(setInterval(function () {
-            this.el.classList.remove('recessed').add('full');
+            this.el.classList.remove('recessed');
+            this.el.classList.add('full');
             this._timeouts.push(setTimeout(function () {
-                this.el.classList.remove('full').add('recessed');
+                this.el.classList.remove('full');
+                this.el.classList.add('recessed');
             }.bind(this), 3000));
         }.bind(this), 600000));
     }
