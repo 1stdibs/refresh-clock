@@ -4,7 +4,7 @@
   "description": "refresh clock display component",
   "author": "",
   "scripts": {
-    "test": "mocha -r babel-register test/**/*",
+    "test": "mocha -r ./register test/**/*",
     "gitlint": "dibslint --git --warnings -e",
     "lint": "dibslint -e --root=."
   },
@@ -35,11 +35,6 @@
   },
   "dependencies": {
     "dibs-scss-vars": "^1.0.3"
-  },
-  "babel": {
-    "presets": [
-      "react"
-    ]
   },
   "directories": {
     "test": "test"
