@@ -15,6 +15,7 @@
     ]
   },
   "devDependencies": {
+    "babel-preset-react": "^6.5.0",
     "babel-register": "^6.5.2",
     "dibslint": "^1.2.4",
     "enzyme": "^2.0.0",
