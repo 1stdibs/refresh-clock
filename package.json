@@ -4,31 +4,41 @@
   "description": "refresh clock display component",
   "author": "",
   "scripts": {
-    "test": "mocha",
-    "gitlint": "dibslint --git --warnings",
-    "lint": "dibslint --root=."
+    "test": "mocha -r babel-register test/**/*",
+    "gitlint": "dibslint --git --warnings -e",
+    "lint": "dibslint -e --root=."
   },
-  "main": "index.js",
+  "main": "index.jsx",
   "pre-commit": {
     "run": [
       "gitlint"
     ]
   },
   "devDependencies": {
+    "babel-register": "^6.5.2",
     "dibslint": "^1.2.4",
+    "enzyme": "^2.0.0",
     "mimic-webpack": "^1.2.4",
     "mocha": "^2.3.4",
     "pre-commit": "^1.1.2",
+    "react-addons-test-utils": "^0.14.7",
+    "react-dom": "^0.14.7",
     "sinon": "^1.17.3",
     "underscore": "^1.8.3",
     "webpack-compile-templates": "^0.2.0"
   },
   "license": "ISC",
+  "peerDependencies": {
+    "babel-runtime": "*",
+    "react": "*"
+  },
   "dependencies": {
-    "dibs-scss-vars": "^1.0.3",
-    "lodash.assign": "^4.0.2",
-    "moment": "^2.11.2",
-    "simple-view": "^1.2.4"
+    "dibs-scss-vars": "^1.0.3"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
   },
   "directories": {
     "test": "test"
