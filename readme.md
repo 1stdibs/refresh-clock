@@ -1,5 +1,5 @@
 # refresh-clock
-Refresh clock display component. Inherits from [`simple-view`](https://www.npmjs.com/package/simple-view).
+Refresh clock React component.
 
 <img src='refreshclock.gif?raw=true' height="60px">
 
@@ -11,5 +11,9 @@ npm install --save refresh-clock
 ##usage:
 ```js
 const RefreshClock = require('refresh-clock');
-new RefreshClock();
+
+<RefreshClock
+    loadTime={moment().format('h:mm a')}
+    refresh={() => window.location.reload()}
+/>
 ```
