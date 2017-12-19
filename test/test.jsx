@@ -2,27 +2,12 @@
 const React = require('react');
 const sinon = require('sinon');
 const assert = require('assert');
-const Mimic = require('mimic-webpack');
-const mount = require('enzyme').mount;
-new Mimic({
-    domSupport: true,
-    loaders: {
-        use: []
-    },
-    webpackConfig: {
-        resolve: {
-            extensions: ['.jsx']
-        },
-        module: {
-            loaders: [{
-                test: /\.scss$/,
-                loader: 'null'
-            }]
-        }
-    }
-}).install();
+const RefreshClock = require('../src/index.jsx');
+const Enzyme = require('enzyme');
+const Adapter = require('enzyme-adapter-react-16');
+Enzyme.configure({ adapter: new Adapter() });
+const { mount } = Enzyme;
 
-const RefreshClock = require('../index');
 
 describe("refresh-clock", function () {
     it('should print the time when rendered', function () {

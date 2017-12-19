@@ -1,6 +1,7 @@
 "use strict";
 
 const React = require('react');
+const PropTypes = require('prop-types');
 require('./style.scss');
 
 class RefreshClock extends React.Component {
@@ -50,8 +51,8 @@ class RefreshClock extends React.Component {
 
 
 RefreshClock.propTypes = {
-    loadTime: React.PropTypes.string,
-    refresh: React.PropTypes.func.isRequired
+    loadTime: PropTypes.string,
+    refresh: PropTypes.func.isRequired
 };
 
 module.exports = RefreshClock;

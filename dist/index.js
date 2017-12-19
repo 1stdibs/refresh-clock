@@ -38,7 +38,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -51,10 +51,16 @@ module.exports =
 /* 1 */
 /***/ function(module, exports) {
 
-	module.e = require("react");
+	module.e = require("prop-types");
 
 /***/ },
 /* 2 */
+/***/ function(module, exports) {
+
+	module.e = require("react");
+
+/***/ },
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67,7 +73,8 @@ module.exports =
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var React = __webpack_require__(1);
+	var React = __webpack_require__(2);
+	var PropTypes = __webpack_require__(1);
 	__webpack_require__(0);
 	
 	var RefreshClock = function (_React$Component) {
@@ -145,8 +152,8 @@ module.exports =
 	}(React.Component);
 	
 	RefreshClock.propTypes = {
-	    loadTime: React.PropTypes.string,
-	    refresh: React.PropTypes.func.isRequired
+	    loadTime: PropTypes.string,
+	    refresh: PropTypes.func.isRequired
 	};
 	
 	module.e = RefreshClock;
